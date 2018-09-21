@@ -28,6 +28,7 @@ lib.unifiedServerLogic = function(req,res){
   });
   req.on('end', function() {
 		buffer += decoder.end();
+		
 		//Assemble the data Object to send to the handler
 		const data = {
 			path : path,
